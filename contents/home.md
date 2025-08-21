@@ -1,20 +1,11 @@
-[![XX](https://img.shields.io/badge/XX-github-blue?logo=github)](https://github.com/XX)
-
-I'm currently pursuing a Master's degree in XX at the Department of XX, XX University, XX.
-
 #### Email  
-<code>XX@XX.XX</code>  
-<code>XX@XX.XX</code>
+<code>liusilin23s@ict.ac.cn</code>  
 
 #### Education  
-**XX University**, Master of XX (XX – XX)  
-• GPA: XX/XX  
+**Chongqing University**, Master of Computer Science (2019 – 2023)  
 
-**XX University**, Exchange student <br>  
-• As a XX, represented my college as an outstanding student for a XX exchange program.  
-
-**XX University**, Honours Bachelor of XX (XX – XX)  
-• GPA: XX/XX (top XX%)  
+**Institute of Computing Technology, Chinese Academy of Sciences**, Master of Computer Science (2023 – )  
 
 #### Research Interests  
-XX, XX, XX, XX.
+Design of Fully Homomorphic Encryption Accelerator, Hardware–Software Co-Design Methodology
+Design Automation

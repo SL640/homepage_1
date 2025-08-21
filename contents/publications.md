@@ -1,6 +1,10 @@
-- XXXXXXX论文
+Work (Participate):
 
-- XXXXXXX论文
+- ERASER: Efficient RTL FAult Simulation Framework with Trimmed Execution Redundancy
 
-- XXXXXXX论文
+- MOSS: Multi-Modal Representation Learning on Sequential Circuits
+
+Work (Major):
+
+- Hades: Harnessing Design Automation for Application-specific FHE Accelerators
 
