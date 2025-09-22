@@ -30,10 +30,15 @@
 
     <style>
         .container {
-            max-width: 960px;
-            /* 限制最大显示宽度 */
+            width: 50%;
+            max-width: none;
             margin: 0 auto;
-            /* 居中显示 */
+        }
+
+        @media (max-width: 992px) {
+            .container {
+                width: 90%;
+            }
         }
     </style>
 
@@ -78,7 +83,7 @@
         };
     </script>
     <script type="text/javascript" id="MathJax-script"
-        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>n
     <script type="text/javascript" id="MathJax-script" async
         src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
@@ -92,7 +97,8 @@
     <!-- Navigation-->
     <nav class="header navbar navbar-expand-lg navbar-light fixed-top shadow-sm" id="mainNav">
         <div class="container px-5">
-            <a id="page-top-title" class="navbar-brand fw-bold" href="#page-top"></a>
+            <a class="navbar-brand" href="#page-top"><img src="static/assets/favicon.ico" alt="Home"
+                    style="height: 1.75rem;"></a>
             <!-- <a href="#page-top"><img src="static/assets/img/CUMT_LOGO.svg" style="width: 11rem;"></a> -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
                 aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -115,56 +121,51 @@
         </div>
     </nav>
 
-    <!-- Top Section -->
-    <section class="top-section" style="background-image: url('static/assets/img/background.jpeg');">
-        <div class="top-section-content">
-            <div class="container px-5">
-                <h2 id="top-section-bg-text" class="text-white display-3 lh-1 font-alt"></h2>
-            </div>
-        </div>
-    </section>
-    <!-- Top Section -->
 
-    <!-- Photo -->
-    <div class="container px-5">
-        <div id="avatar">
-            <img class="shadow" src="static/assets/img/lsl.JPG">
-        </div>
-    </div>
-    <!-- Photo -->
+
+
 
     <!-- Home -->
-    <section class="bg-gradient-primary-to-secondary-light mt5 md5" id="home">
+    <section class="mt5 md5" id="home" style="padding-top: 7rem;">
         <div class="container px-5">
+            <div id="avatar">
+                <img class="shadow" src="static/assets/img/lsl.JPG">
+            </div>
             <header>
+                <h1 id="name" class="lh-1" lang="zh"></h1>
                 <h2 id="home-subtitle"> </h2>
                 <!-- <span class="bi bi-list"></span> -->
             </header>
             <div class="main-body" id="home-md"></div>
         </div>
+        <div class="container px-5">
+            <hr class="section-divider">
+        </div>
     </section>
     <!-- Home -->
 
     <!-- Publications -->
-    <section class="bg-gradient-primary-to-secondary-gray mt5 md5" id="publications">
+    <section class="mt5 md5" id="publications">
         <div class="container px-5">
             <header>
                 <h2 id="publications-subtitle"><i class="bi bi-file-text-fill"></i>&nbsp;PUBLICATIONS</h2>
             </header>
             <div class="main-body" id="publications-md"></div>
 
+            <hr class="section-divider">
         </div>
     </section>
     <!-- Publications  -->
 
     <!-- Awards -->
-    <section class="bg-gradient-primary-to-secondary-light mt5 md5" id="awards">
+    <section class="mt5 md5" id="awards">
         <div class="container px-5">
             <header>
                 <h2 id="awards-subtitle"><i class="bi bi-award-fill"></i>AWARDS </h2>
             </header>
             <div class="main-body" id="awards-md"></div>
 
+            <hr class="section-divider">
         </div>
     </section>
     <!-- Awards -->
@@ -172,9 +173,9 @@
 
 
     <!-- Footer-->
-    <footer class="bg-bottom text-center py-5">
+    <footer class="text-center py-5">
         <div class="container px-5">
-            <div class="text-white-50 small">
+            <div class="small">
                 <div id="copyright-text" class="mb-2"></div>
                 <a id="github-link" href="https://github.com/senli1073">Github</a>
                 <span class="mx-1">&middot;</span>

@@ -1,9 +1,11 @@
-Work (Major):
+#### Major:
 
-- Hades: Harnessing Design Automation for Application-specific FHE Accelerators
+- Hades: Harnessing Architecture Design Automation for Application-specific FHE Accelerators (Under Submission)
+- Odin: Rethinking FHE Accelerator Architecture via  Computation–Storage Co-Design (Under Submission)
 
-Work (Participate):
 
-- ERASER: Efficient RTL FAult Simulation Framework with Trimmed Execution Redundancy
 
-- MOSS: Multi-Modal Representation Learning on Sequential Circuits
+#### Participate:
+
+- ERASER: Efficient RTL FAult Simulation Framework with Trimmed Execution Redundancy (DATE-25)
+- MOSS: Multi-Modal Representation Learning on Sequential Circuits (DAC-25)

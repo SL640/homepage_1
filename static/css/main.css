@@ -1,17 +1,17 @@
 @import "./styles.css";
 
 
-:root{
-    --h-title-color:#3948d2;
+:root {
+    --h-title-color: #3948d2;
 }
 
 .header {
-    border-bottom: solid 2px var(--bs-blue);
+    border-bottom: none;
     z-index: 10000;
 }
 
 .bg-bottom {
-    background-color: var(--h-title-color);
+    background-color: transparent !important;
 }
 
 .top-section {
@@ -41,26 +41,27 @@
     background: rgba(0, 0, 0, 0.5);
 }
 
-section header h2{
+section header h2 {
     font-family: "Kanit", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;
-    color: var(--h-title-color);
+    color: #007bff;
     font-size: 2.3rem;
     line-height: 4rem;
 }
 
-section .main-body{
+section .main-body {
     font-size: 1.3rem;
     font-weight: 200;
     line-height: 2.4rem;
 }
 
 
+/* Remove full-width background stripes; keep neutral background */
 .bg-gradient-primary-to-secondary-light {
-    background: linear-gradient(45deg, #fcfcfc, #ffffff) !important;
+    background: transparent !important;
 }
 
 .bg-gradient-primary-to-secondary-gray {
-    background: linear-gradient(45deg, #f0f0f0, #f1f1f1) !important;
+    background: transparent !important;
 }
 
 
@@ -90,16 +91,14 @@ section .main-body{
 
 #avatar {
     position: relative;
-    height: 0;
-    top:min(-65px,max(-100px,calc(-1*100vw/12)));
-    max-width: 55em;
-    margin: 0 1.5rem 0 0;
-    float: right;
+    top: 0;
+    margin: 0;
+    padding: 0;
     z-index: 9000;
 }
 
 #avatar img {
-    height: max(130px,min(200px,calc(100vw/6)));
+    height: max(130px, min(200px, calc(100vw/6)));
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
 }
 
@@ -109,4 +108,83 @@ section .main-body{
     }
 }
 
+/* Home header layout */
+section#home .container {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-areas:
+        "title avatar"
+        "body body";
+    gap: 0 0.05rem;
+    align-items: start;
+}
 
+section#home header {
+    grid-area: title;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+section#home header h1,
+section#home header h2 {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+section#home .main-body {
+    grid-area: body;
+}
+
+section#home #avatar {
+    grid-area: avatar;
+}
+
+/* Name styles: smaller, bold (Heiti), Chinese in KaiTi */
+#name {
+    font-size: clamp(1.75rem, 4vw, 2.5rem);
+    font-weight: 700;
+    font-family: "Heiti SC", "STHeiti", "Helvetica Neue", Arial, sans-serif;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+/* Prefer KaiTi for Chinese text in the name */
+#name:lang(zh),
+#name[lang="zh"],
+html[lang^="zh"] #name {
+    font-family: "Kaiti SC", "KaiTi", "STKaiti", serif;
+}
+
+/* Section divider line */
+.section-divider {
+    border: 0;
+    border-top: 4px solid #28a745;
+    margin: 0.02rem 0;
+    opacity: 1;
+}
+
+/* Reduce section spacing */
+section.mt5 {
+    margin-top: 0.05rem !important;
+}
+
+section#publications,
+section#awards {
+    margin-top: 0.05rem !important;
+    padding-top: 0.05rem !important;
+}
+
+/* Mobile layout: name above photo */
+@media screen and (max-width: 576px) {
+    section#home .container {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "title"
+            "avatar"
+            "body";
+    }
+
+    #avatar {
+        margin-left: 0;
+    }
+}
